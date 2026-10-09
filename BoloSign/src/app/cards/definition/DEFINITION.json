@@ -1,0 +1,119 @@
+{
+  "title": "BoloSign",
+  "fetch": {
+    "targetUrl": "https://signature-backend.boloforms.com/api/v1/signature/hubspot/getdata",
+    "objectTypes": [
+      {
+        "name": "deals",
+        "propertiesToSend": ["hs_object_id", "dealname", "dealstage"]
+      }
+    ]
+  },
+  "display": {
+    "properties": [
+      {
+        "name": "Status",
+        "label": "Status",
+        "dataType": "STATUS",
+        "options": [
+          {
+            "name": "SENT VIA LINK",
+            "label": "SENT VIA LINK",
+            "type": "INFO"
+          }
+        ]
+      },
+      {
+        "name": "Created",
+        "label": "Created",
+        "dataType": "STRING",
+        "options": []
+      },
+      {
+        "name": "Created By",
+        "label": "Created By",
+        "dataType": "STRING",
+        "options": []
+      },
+      {
+        "name": "Next Step",
+        "label": "Next Step",
+        "dataType": "STRING",
+        "options": []
+      },
+      {
+        "name": "Manage",
+        "label": "Manage",
+        "dataType": "LINK",
+        "options": []
+      }
+    ]
+  },
+  "actions": {
+    "baseUrls": [
+      "https://signature-backend.boloforms.com/api/v1/signature/hubspot/deals/createtemplate",
+      "https://signature-backend-staging.boloforms.com/api/v1/signature/hubspot/deals/createtemplate"
+    ]
+  },
+  "id": "524520",
+  "createdAt": "2024-03-09T06:51:23.323Z",
+  "updatedAt": "2025-05-01T06:07:18.340Z",
+  "auditHistory": [
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "CREATE",
+      "initiatingUserId": 63950097,
+      "changedAt": 1709967083323
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63950097,
+      "changedAt": 1710833266019
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63950097,
+      "changedAt": 1710834832696
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63950097,
+      "changedAt": 1710834862971
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63963479,
+      "changedAt": 1721115989259
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63963479,
+      "changedAt": 1721392001155
+    },
+    {
+      "objectTypeId": 524520,
+      "applicationId": 3020473,
+      "authSource": "APP",
+      "actionType": "UPDATE",
+      "initiatingUserId": 63963479,
+      "changedAt": 1746079638340
+    }
+  ]
+}

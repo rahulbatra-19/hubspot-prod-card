@@ -1,0 +1,10 @@
+{
+  "uid": "bolosign",
+  "type": "card",
+  "config": {
+    "name": "BoloSign",
+    "location": "crm.record.sidebar",
+    "entrypoint": "/app/cards/Converter.tsx",
+    "objectTypes": [ "deals"]
+  }
+}

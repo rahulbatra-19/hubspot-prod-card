@@ -1,0 +1,47 @@
+{
+  "config": {
+    "auth": {
+      "type": "oauth",
+      "redirectUrls": [
+        "https://signature-backend-staging.boloforms.com/api/v1/signature/auth/hubspot/callback",
+        "https://signature-backend.boloforms.com/api/v1/signature/auth/hubspot/callback",
+        "http://localhost:8080/api/v1/signature/auth/hubspot/callback"
+      ],
+      "optionalScopes": [],
+      "requiredScopes": [
+        "files",
+        "crm.objects.companies.read",
+        "crm.objects.deals.write",
+        "crm.objects.owners.read",
+        "crm.objects.contacts.read",
+        "crm.objects.deals.read"
+      ],
+      "conditionallyRequiredScopes": [
+        "crm.objects.leads.read",
+        "crm.objects.leads.write"
+      ]
+    },
+    "logo": "/app/app-logo.png",
+    "name": "BoloSign",
+    "support": {
+      "supportUrl": "https://help.boloforms.com",
+      "supportEmail": "support@boloforms.com",
+      "supportPhone": "+14156496611",
+      "documentationUrl": "https://help.boloforms.com/en/collections/19658503"
+    },
+    "description": "BoloSign streamlines the creation and e-Signing of proposals and contracts through document automation.",
+    "isUserLevel": false,
+    "distribution": "MARKETPLACE",
+    "permittedUrls": {
+      "img": [],
+      "fetch": [
+        "https://signature-backend.boloforms.com/api/v1/signature/hubspot/getdata",
+        "https://signature-backend-staging.boloforms.com/api/v1/signature/hubspot/deals/createtemplate",
+        "https://signature-backend.boloforms.com/api/v1/signature/hubspot/deals/createtemplate"
+      ],
+      "iframe": []
+    }
+  },
+  "uid": "BoloSigneSignatureandPDFAutomation",
+  "type": "app"
+}
