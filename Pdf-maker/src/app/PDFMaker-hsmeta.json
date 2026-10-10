@@ -1,0 +1,42 @@
+{
+  "config": {
+    "auth": {
+      "type": "oauth",
+      "redirectUrls": [
+        "https://backend.thepdfmaker.com/api/auth/hubspot/callback",
+        "http://localhost:8080/api/auth/hubspot/callback"
+      ],
+      "optionalScopes": [],
+      "requiredScopes": [
+        "crm.objects.companies.read",
+        "automation",
+        "crm.objects.owners.read",
+        "oauth",
+        "crm.objects.contacts.read",
+        "crm.objects.deals.read"
+      ],
+      "conditionallyRequiredScopes": []
+    },
+    "logo": "/app/app-logo.jpeg",
+    "name": "PDF Maker",
+    "support": {
+      "supportUrl": "https://app.thepdfmaker.com/",
+      "supportEmail": "support@thepdfmaker.com",
+      "documentationUrl": "https://help.thepdfmaker.com"
+    },
+    "description": "Instantly Generate Custom PDFs with HubSpot Data.",
+    "isUserLevel": false,
+    "distribution": "MARKETPLACE",
+    "permittedUrls": {
+      "img": [],
+      "fetch": [
+        "https://backend.thepdfmaker.com/",
+        "https://backend.thepdfmaker.com/api/hubspot/getCardData?type=deal",
+        "https://shark-first-marmot.ngrok-free.app/"
+      ],
+      "iframe": []
+    }
+  },
+  "uid": "PDFMaker",
+  "type": "app"
+}

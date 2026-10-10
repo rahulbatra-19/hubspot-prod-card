@@ -1,0 +1,44 @@
+{
+  "config": {
+    "labels": {
+      "en": {
+        "actionName": "Generate PDF",
+        "appDisplayName": "PDF Maker",
+        "inputFieldLabels": {
+          "templateId": "Select PDF Template"
+        },
+        "actionCardContent": "A PDF will be generated using the selected template.",
+        "actionDescription": "Generates a PDF using selected template and object data and saves PDF in runhistory of the templates."
+      }
+    },
+    "actionUrl": "https://backend.thepdfmaker.com/api/hubspot/generatePdf/workflow",
+    "inputFields": [
+      {
+        "isRequired": true,
+        "typeDefinition": {
+          "name": "templateId",
+          "type": "enumeration",
+          "fieldType": "select",
+          "optionsUrl": "https://backend.thepdfmaker.com/api/hubspot/templates",
+          "externalOptions": false
+        },
+        "supportedValueTypes": [
+          "STATIC_VALUE"
+        ]
+      }
+    ],
+    "isPublished": true,
+    "objectTypes": [
+      "0-1",
+      "0-3"
+    ],
+    "supportedClients": [
+      {
+        "client": "WORKFLOWS"
+      }
+    ],
+    "objectRequestOptions": {}
+  },
+  "uid": "GeneratePDF",
+  "type": "workflow-action"
+}
