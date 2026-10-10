@@ -1,0 +1,50 @@
+{
+  "title": "Pdf Maker - Automate Documents",
+  "fetch": {
+    "targetUrl": "https://backend.thepdfmaker.com/api/hubspot/getCardData",
+    "objectTypes": [
+      {
+        "name": "deals",
+        "propertiesToSend": ["hs_object_id", "dealname"]
+      },
+      {
+        "name": "contacts",
+        "propertiesToSend": ["hs_object_id", "email"]
+      }
+    ]
+  },
+  "display": {
+    "properties": [
+      {
+        "name": "Next Step",
+        "label": "Next Step",
+        "dataType": "STRING",
+        "options": []
+      },
+      {
+        "name": "Manage",
+        "label": "Manage",
+        "dataType": "LINK",
+        "options": []
+      },
+      {
+        "name": "PDF Output",
+        "label": "PDF Output",
+        "dataType": "LINK",
+        "options": []
+      },
+      {
+        "name": "Created",
+        "label": "Created",
+        "dataType": "STRING",
+        "options": []
+      }
+    ]
+  },
+  "actions": {
+    "baseUrls": [
+      "https://shark-first-marmot.ngrok-free.app/",
+      "https://backend.thepdfmaker.com/"
+    ]
+  }
+}

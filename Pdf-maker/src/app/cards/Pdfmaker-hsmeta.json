@@ -1,0 +1,10 @@
+{
+  "uid": "pdfmaker",
+  "type": "card",
+  "config": {
+    "name": "Pdf Maker - Automate Documents",
+    "location": "crm.record.sidebar",
+    "entrypoint": "/app/cards/Converter.tsx",
+    "objectTypes": [ "deals", "contacts"]
+  }
+}
